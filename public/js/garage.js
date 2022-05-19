@@ -60,6 +60,7 @@ for (i; i < attente.personnes.length ; i++) {
     console.table(attente.personnes);
     // Le client reçoit un devis 
     bureau.personnes[0].devis = pieces[i]
+    pieces.splice(0,1)
     // Le client donne 45€ au patron
     bureau.personnes[0].argent -= 45;
     console.log(`${bureau.personnes[0].nom} a donné 45€ pour le devis, il lui reste ${bureau.personnes[0].argent}€.`)
@@ -77,12 +78,7 @@ for (i; i < attente.personnes.length ; i++) {
 console.log(`Ces personnes attendent à la CAISSE :`)
 console.table(caisse.personnes)
 
-console.table(personne.marcus.devis)
-console.table(personne.julien.devis)
-console.table(personne.lea.devis)
-console.table(personne.serge.devis)
-console.table(personne.leo.devis)
 
 
 
-export {Lieux, caisse, attente, bureau, Devis, pieces}
+export {patron, Lieux, caisse, attente, bureau, Devis, pieces}

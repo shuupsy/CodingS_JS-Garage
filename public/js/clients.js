@@ -1,14 +1,12 @@
 // Clients
 class Clients {
-    constructor(nom, vehicule, argent, probleme, facture, goTo, pay, devis) {
+    constructor(nom, vehicule, argent, probleme, facture, devis) {
         this.nom = nom;
         this.vehicule = vehicule;
         this.argent = argent;
         this.probleme = probleme;
         this.facture = facture;
-        // goTo() {};
-        // pay() {}
-       this.devis = devis;
+        this.devis = devis;
     }
 }
 
@@ -22,4 +20,12 @@ let leo = new Clients("Léo", "Audi", 600, "huile à moteur vide");
 let clients = [marcus, julien, lea, serge, leo]
 
 // Export
-export {Clients, clients, marcus, julien, lea, serge, leo}
+export {
+    Clients,
+    clients,
+    marcus,
+    julien,
+    lea,
+    serge,
+    leo
+}
