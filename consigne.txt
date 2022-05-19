@@ -1,4 +1,4 @@
-# Bienvenu au garage de  la  ville de Bruxelles.
+# Bienvenue au garage de  la  ville de Bruxelles.
 >Dans cet exercice, nous aurons des clients qui iront se faire réparer leur véhicule chez le garagiste. Le garagiste fera un devis et leur une facture. Par la suite, les clients iront à la caisse afin d'acheter les pièces puis le garagiste réparera le véhicule.
 
 
@@ -11,10 +11,10 @@
 |Julien|Peugeot|100|pneu crevé|
 |Léa|Renault|300|feu avant cassé|
 |Serge|Mercedes|500|moteur en panne|
-|Léo|Audi|600|huile à moetur vide|
+|Léo|Audi|600|huile à moteur vide|
 
 ## Description du garagiste
-> le garagiste lui reçoit les clients dans son bureau. Tout d'abord, il fait les devis avant de leur faire une facture.
+> le garagiste reçoit les clients dans son bureau. Tout d'abord, il fait les devis avant de leur faire une facture.
 > Attention le garagiste fait à chaque fois sortir le client avant de prendre le suivant.
 > dans son cabinet il y a un chien de race berger allemand pour garder les lieux contre les voleurs. Son chien aboie à tous mes deux secondes dans la console (bonus). Le devis coûte 45€. Les clients ont eu un devis dans de sortirs du bureau.
 

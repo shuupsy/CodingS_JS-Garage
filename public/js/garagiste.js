@@ -1,5 +1,11 @@
 import * as personne from './clients.js'
 
+// EL patrone
+let patron = {
+    nom : "BOSS", 
+    argent : 0,
+}
+
 // Salles du garage
 class Lieux {
     constructor(nom, personnes) {
@@ -8,8 +14,14 @@ class Lieux {
     }
 }
 
-let bureau = new Lieux("Bureau", []);
+
+// Caisse
 let caisse = new Lieux("Caisse", []);
+
+// Bureau
+let bureau = new Lieux("Bureau", []);
+bureau.personnes = [patron]
+console.table(`${patron.nom} est dans son ${bureau.nom}.`)
 
 // Salle d'attente
 let attente = new Lieux("Salle d'attente");
@@ -23,10 +35,10 @@ let garage =  [attente, bureau, caisse];
 
 
 // Qu'est-ce qui se passe dans le bureau?
-// let i=0
-// for (i; i < clients.length ; i++) {
-
-// }
+let i=0
+for (i; i < attente.personnes.length ; i++) {
+    bureau.personnes.push(attente.personnes[i])
+}
 
 
 export {Lieux, attente, bureau, caisse, garage}
