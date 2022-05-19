@@ -31,14 +31,24 @@ console.log(`Voici les clients présents dans la salle d'attente :`);
 console.table(attente.personnes)
 
 
-let garage =  [attente, bureau, caisse];
-
-
 // Qu'est-ce qui se passe dans le bureau?
 let i=0
 for (i; i < attente.personnes.length ; i++) {
-    bureau.personnes.push(attente.personnes[i])
+    // Le client rentre dans le bureau
+    bureau.personnes.unshift(attente.personnes[i]);
+    console.log(`${attente.personnes[i].nom} est rentré dans le bureau.`)
+    // Le client est sorti de la salle d'attente
+    attente.personnes.splice(0,1);
+    console.log(`Il reste ces personnes dans la salle d'attente :`)
+    console.table(attente.personnes);
+    // Le client reçoit un devis et donne 45€ au patron
+    bureau.personnes[0].argent -= 45;
+    console.log(`${bureau.personnes[0].nom} a donné 45€ pour le devis, il lui reste ${bureau.personnes[0].argent}€.`)
+    // Le patron reçoit 45€
+    patron.argent += 45;
+    console.log(`Argent du patron après devis : ${patron.argent}€.`)
+    i--;
 }
 
 
-export {Lieux, attente, bureau, caisse, garage}
+export {Lieux, attente, bureau, caisse}
