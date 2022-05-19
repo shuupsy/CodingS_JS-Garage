@@ -1,6 +1,6 @@
 // Clients
 class Clients {
-    constructor(nom, vehicule, argent, probleme, facture, goTo, pay) {
+    constructor(nom, vehicule, argent, probleme, facture, goTo, pay, devis) {
         this.nom = nom;
         this.vehicule = vehicule;
         this.argent = argent;
@@ -8,7 +8,7 @@ class Clients {
         this.facture = facture;
         // goTo() {};
         // pay() {}
-       
+       this.devis = devis;
     }
 }
 
