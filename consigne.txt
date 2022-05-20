@@ -16,7 +16,7 @@
 ## Description du garagiste
 > le garagiste reçoit les clients dans son bureau. Tout d'abord, il fait les devis avant de leur faire une facture.
 > Attention le garagiste fait à chaque fois sortir le client avant de prendre le suivant.
-> dans son cabinet il y a un chien de race berger allemand pour garder les lieux contre les voleurs. Son chien aboie à tous mes deux secondes dans la console (bonus). Le devis coûte 45€. Les clients ont eu un devis dans de sortirs du bureau.
+> dans son cabinet il y a un chien de race berger allemand pour garder les lieux contre les voleurs. Son chien aboie à tous mes deux secondes dans la console (bonus). Le devis coûte 45€. Les clients ont reçu un devis à la sortie du bureau.
 
 |nom|argent|devis|facture|clientIn|ClientOut|
 |---|---|---|---|---|---|
@@ -47,7 +47,7 @@
 |pneu crevé|`50€`|
 |feu avant cassé|`60€`|
 |moteur en panne|`800€`|
-|huile à moetur vide|`100€`|
+|huile à moteur vide|`100€`|
 
 
 # Vérification

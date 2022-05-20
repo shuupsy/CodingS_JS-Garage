@@ -9,12 +9,6 @@ import {
 } from './garage.js'
 
 
-class Facture extends Devis {
-    constructor(probleme, pieces, prix, etat) {
-        super(probleme, pieces, prix),
-        this.etat = "payé"
-    }
-}
 
 // Payer la facture
 let i = 0;
@@ -44,7 +38,6 @@ for (i; i < caisse.personnes.length; i++) {
         i--;
     }
 }
-
 
 // Récap des personnes
 console.log("Voici le récap de nos clients, à la fin:")
